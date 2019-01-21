@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8084
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yush1989/myst.git
+          searchPaths: myst
+          username: yush1989
+          password: yush2018
+  application:
+    name: config-server
